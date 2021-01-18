@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		D17A08D825B62F6400B9CD27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08D725B62F6400B9CD27 /* ContentView.swift */; };
 		D17A08DA25B62F6600B9CD27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17A08D925B62F6600B9CD27 /* Assets.xcassets */; };
 		D17A08DD25B62F6600B9CD27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17A08DC25B62F6600B9CD27 /* Preview Assets.xcassets */; };
+		D17A08E725B6303300B9CD27 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = D17A08E625B6303300B9CD27 /* SwiftUICharts */; };
+		D17A08EB25B6310C00B9CD27 /* SelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08EA25B6310C00B9CD27 /* SelectView.swift */; };
+		D17A08EE25B6327000B9CD27 /* LineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08ED25B6327000B9CD27 /* LineChart.swift */; };
+		D17A08F225B6336300B9CD27 /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08F125B6336300B9CD27 /* BarChart.swift */; };
+		D17A08F525B634C500B9CD27 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08F425B634C500B9CD27 /* PieChart.swift */; };
+		D17A08F825B635F700B9CD27 /* MultiLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08F725B635F700B9CD27 /* MultiLineChart.swift */; };
+		D17A08FB25B638EB00B9CD27 /* CerchioColorato.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08FA25B638EB00B9CD27 /* CerchioColorato.swift */; };
+		D17A08FF25B63AC500B9CD27 /* TemperatureControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A08FE25B63AC500B9CD27 /* TemperatureControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +28,13 @@
 		D17A08D925B62F6600B9CD27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D17A08DC25B62F6600B9CD27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D17A08DE25B62F6600B9CD27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D17A08EA25B6310C00B9CD27 /* SelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectView.swift; sourceTree = "<group>"; };
+		D17A08ED25B6327000B9CD27 /* LineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChart.swift; sourceTree = "<group>"; };
+		D17A08F125B6336300B9CD27 /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		D17A08F425B634C500B9CD27 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
+		D17A08F725B635F700B9CD27 /* MultiLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineChart.swift; sourceTree = "<group>"; };
+		D17A08FA25B638EB00B9CD27 /* CerchioColorato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CerchioColorato.swift; sourceTree = "<group>"; };
+		D17A08FE25B63AC500B9CD27 /* TemperatureControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17A08E725B6303300B9CD27 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +68,8 @@
 		D17A08D425B62F6400B9CD27 /* Grafici */ = {
 			isa = PBXGroup;
 			children = (
+				D17A08E925B630F400B9CD27 /* View */,
 				D17A08D525B62F6400B9CD27 /* GraficiApp.swift */,
-				D17A08D725B62F6400B9CD27 /* ContentView.swift */,
 				D17A08D925B62F6600B9CD27 /* Assets.xcassets */,
 				D17A08DE25B62F6600B9CD27 /* Info.plist */,
 				D17A08DB25B62F6600B9CD27 /* Preview Content */,
@@ -67,6 +83,37 @@
 				D17A08DC25B62F6600B9CD27 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D17A08E925B630F400B9CD27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D17A08FD25B63A6200B9CD27 /* Cerchioview */,
+				D17A08F025B6332C00B9CD27 /* GraficiView */,
+				D17A08D725B62F6400B9CD27 /* ContentView.swift */,
+				D17A08EA25B6310C00B9CD27 /* SelectView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D17A08F025B6332C00B9CD27 /* GraficiView */ = {
+			isa = PBXGroup;
+			children = (
+				D17A08ED25B6327000B9CD27 /* LineChart.swift */,
+				D17A08F125B6336300B9CD27 /* BarChart.swift */,
+				D17A08F425B634C500B9CD27 /* PieChart.swift */,
+				D17A08F725B635F700B9CD27 /* MultiLineChart.swift */,
+			);
+			path = GraficiView;
+			sourceTree = "<group>";
+		};
+		D17A08FD25B63A6200B9CD27 /* Cerchioview */ = {
+			isa = PBXGroup;
+			children = (
+				D17A08FA25B638EB00B9CD27 /* CerchioColorato.swift */,
+				D17A08FE25B63AC500B9CD27 /* TemperatureControlView.swift */,
+			);
+			path = Cerchioview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +132,9 @@
 			dependencies = (
 			);
 			name = Grafici;
+			packageProductDependencies = (
+				D17A08E625B6303300B9CD27 /* SwiftUICharts */,
+			);
 			productName = Grafici;
 			productReference = D17A08D225B62F6400B9CD27 /* Grafici.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +162,9 @@
 				Base,
 			);
 			mainGroup = D17A08C925B62F6400B9CD27;
+			packageReferences = (
+				D17A08E525B6303300B9CD27 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = D17A08D325B62F6400B9CD27 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D17A08FB25B638EB00B9CD27 /* CerchioColorato.swift in Sources */,
+				D17A08FF25B63AC500B9CD27 /* TemperatureControlView.swift in Sources */,
+				D17A08EE25B6327000B9CD27 /* LineChart.swift in Sources */,
 				D17A08D825B62F6400B9CD27 /* ContentView.swift in Sources */,
 				D17A08D625B62F6400B9CD27 /* GraficiApp.swift in Sources */,
+				D17A08F825B635F700B9CD27 /* MultiLineChart.swift in Sources */,
+				D17A08F525B634C500B9CD27 /* PieChart.swift in Sources */,
+				D17A08F225B6336300B9CD27 /* BarChart.swift in Sources */,
+				D17A08EB25B6310C00B9CD27 /* SelectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +386,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D17A08E525B6303300B9CD27 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D17A08E625B6303300B9CD27 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D17A08E525B6303300B9CD27 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D17A08CA25B62F6400B9CD27 /* Project object */;
 }
